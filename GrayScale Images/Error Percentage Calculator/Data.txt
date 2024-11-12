@@ -1,0 +1,64 @@
+
+Error Percentage for IMG1: 8.70%
+Error Percentage for IMG2: 7.46%
+Error Percentage for IMG3: 11.83%
+Error Percentage for IMG4: 11.46%
+Error Percentage for IMG5: 6.63%
+Error Percentage for IMG6: 9.36%
+Error Percentage for IMG7: 8.55%
+Error Percentage for IMG8: 9.72%
+Error Percentage for IMG9: 9.82%
+Error Percentage for IMG10: 11.79%
+Error Percentage for IMG11: 7.67%
+
+
+Error Percentage for IMG3: 10.66%
+Error Percentage for IMG4: 12.61%
+Error Percentage for IMG5: 6.15%
+Error Percentage for IMG6: 9.31%
+Error Percentage for IMG7: 7.79%
+Error Percentage for IMG8: 8.94%
+Error Percentage for IMG9: 8.80%
+Error Percentage for IMG10: 9.94%
+Error Percentage for IMG11: 8.89%
+
+
+Error Percentage for IMG1: 10.98%
+Error Percentage for IMG2: 8.51%
+Error Percentage for IMG3: 11.48%
+Error Percentage for IMG4: 15.54%
+Error Percentage for IMG5: 6.26%
+Error Percentage for IMG6: 8.28%
+Error Percentage for IMG7: 8.37%
+Error Percentage for IMG8: 8.85%
+Error Percentage for IMG9: 9.28%
+Error Percentage for IMG10: 14.97%
+Error Percentage for IMG11: 8.83%
+
+
+Error Percentage for IMG1: 13.18%
+Error Percentage for IMG2: 8.48%
+Error Percentage for IMG3: 12.71%
+Error Percentage for IMG4: 14.67%
+Error Percentage for IMG5: 8.82%
+Error Percentage for IMG6: 10.59%
+Error Percentage for IMG7: 10.05%
+Error Percentage for IMG8: 10.23%
+Error Percentage for IMG9: 10.30%
+Error Percentage for IMG10: 11.04%
+Error Percentage for IMG11: 10.25%
+
+Try 5 83 83 83
+
+Error Percentage for IMG1: 11.73%
+Error Percentage for IMG2: 8.89%
+Error Percentage for IMG3: 12.03%
+Error Percentage for IMG4: 15.94%
+Error Percentage for IMG5: 7.79%
+Error Percentage for IMG6: 8.68%
+Error Percentage for IMG7: 9.53%
+Error Percentage for IMG8: 9.17%
+Error Percentage for IMG9: 10.24%
+Error Percentage for IMG10: 11.70%
+Error Percentage for IMG11: 9.00%
+
