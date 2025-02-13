@@ -1,0 +1,18 @@
+The issue you're facing—where the transformed images appear as white canvases—likely stems from the way the sigmoid transformation is applied to pixel values.
+
+Why Are the Images Coming Out as White?
+The sigmoid function:
+T 
+f
+​
+ (x)= 
+1+e 
+−x
+ 
+1
+​
+
+is highly sensitive to large values of x. Since grayscale pixel values range from 0 to 255, applying this transformation directly will yield values very close to 1 for most pixel intensities, making the entire image appear white.
+
+Solution: Normalize the Pixel Values Before Applying Sigmoid
+Instead of applying the sigmoid function directly on pixel values (0-255), normalize them to [-1,1] or [0,1] before applying the function.

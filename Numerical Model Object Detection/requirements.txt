@@ -2,3 +2,4 @@ pillow
 matplotlib
 numpy
 colorgram.py
+scipy

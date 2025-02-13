@@ -1,0 +1,8 @@
+Function: Perm
+Bounds: [(-2, 2), (-2, 2)]
+
+Global Minimum value: 0.000000
+Found at x = [1.76923077 1.07692308]
+
+Global Maximum value: 110.500000
+Found at x = [-2. -2.]

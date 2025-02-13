@@ -1,0 +1,8 @@
+Function: Eggcrate
+Bounds: [(-6.283185307179586, 6.283185307179586), (-6.283185307179586, 6.283185307179586)]
+
+Global Minimum value: 0.000000
+Found at x = [0. 0.]
+
+Global Maximum value: 96.289837
+Found at x = [ 4.91441832 -4.91441839]

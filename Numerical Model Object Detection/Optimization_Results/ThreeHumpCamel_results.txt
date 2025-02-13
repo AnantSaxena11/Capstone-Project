@@ -1,0 +1,8 @@
+Function: ThreeHumpCamel
+Bounds: [(-5, 5), (-5, 5)]
+
+Global Minimum value: 0.000000
+Found at x = [0. 0.]
+
+Global Maximum value: 2047.916667
+Found at x = [5. 5.]

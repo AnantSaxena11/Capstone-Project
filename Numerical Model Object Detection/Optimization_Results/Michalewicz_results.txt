@@ -1,0 +1,8 @@
+Function: Michalewicz
+Bounds: [(0, 3.141592653589793), (0, 3.141592653589793)]
+
+Global Minimum value: -1.801303
+Found at x = [2.20290551 1.57079632]
+
+Global Maximum value: -0.000000
+Found at x = [6.59430834e-06 4.33918804e-06]

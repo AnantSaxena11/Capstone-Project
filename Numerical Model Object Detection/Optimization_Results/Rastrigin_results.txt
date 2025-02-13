@@ -1,0 +1,8 @@
+Function: Rastrigin
+Bounds: [(-5.12, 5.12), (-5.12, 5.12)]
+
+Global Minimum value: 0.994959
+Found at x = [-5.05993584e-09  9.94958636e-01]
+
+Global Maximum value: 80.706580
+Found at x = [4.52299365 4.52299366]

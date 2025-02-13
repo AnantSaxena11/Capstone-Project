@@ -1,0 +1,8 @@
+Function: Booth
+Bounds: [(-10, 10), (-10, 10)]
+
+Global Minimum value: 0.000000
+Found at x = [1. 3.]
+
+Global Maximum value: 2594.000000
+Found at x = [-10. -10.]

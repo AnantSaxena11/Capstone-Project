@@ -1,0 +1,8 @@
+Function: Beale
+Bounds: [(-4.5, 4.5), (-4.5, 4.5)]
+
+Global Minimum value: 0.000000
+Found at x = [3.  0.5]
+
+Global Maximum value: 174813.363281
+Found at x = [4.5 4.5]

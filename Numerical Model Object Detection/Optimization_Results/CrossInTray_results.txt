@@ -1,0 +1,8 @@
+Function: CrossInTray
+Bounds: [(-10, 10), (-10, 10)]
+
+Global Minimum value: -2.062612
+Found at x = [1.34940525 1.34940404]
+
+Global Maximum value: -0.001180
+Found at x = [9.42477796 9.42477796]
