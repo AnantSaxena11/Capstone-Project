@@ -1,0 +1,8 @@
+Function: GoldsteinPrice
+Bounds: [(-2, 2), (-2, 2)]
+
+Global Minimum value: 3.000000
+Found at x = [-7.91804560e-09 -1.00000001e+00]
+
+Global Maximum value: 1015690.271798
+Found at x = [-1.73737254  2.        ]

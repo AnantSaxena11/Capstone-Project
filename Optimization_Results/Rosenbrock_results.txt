@@ -1,0 +1,8 @@
+Function: Rosenbrock
+Bounds: [(-5, 5), (-5, 5)]
+
+Global Minimum value: 0.000000
+Found at x = [1. 1.]
+
+Global Maximum value: 90016.000000
+Found at x = [ 5. -5.]

@@ -1,0 +1,8 @@
+Function: StyblinskiTang
+Bounds: [(-5, 5), (-5, 5)]
+
+Global Minimum value: -78.332331
+Found at x = [-2.90353403 -2.90353407]
+
+Global Maximum value: 250.000000
+Found at x = [5. 5.]

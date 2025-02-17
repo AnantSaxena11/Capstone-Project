@@ -1,0 +1,8 @@
+Function: SchafferN2
+Bounds: [(-100, 100), (-100, 100)]
+
+Global Minimum value: 0.000000
+Found at x = [1.99244887e-07 1.78216175e-07]
+
+Global Maximum value: 0.998433
+Found at x = [ 6.88478979e-05 -1.25311297e+00]

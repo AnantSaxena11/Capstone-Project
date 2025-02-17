@@ -1,0 +1,8 @@
+Function: Eggholder
+Bounds: [(-512, 512), (-512, 512)]
+
+Global Minimum value: -955.255152
+Found at x = [479.04548467 434.50596289]
+
+Global Maximum value: 894.578900
+Found at x = [ 465.6941236 -479.7166653]

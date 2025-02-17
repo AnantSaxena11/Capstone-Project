@@ -1,0 +1,8 @@
+Function: Levi
+Bounds: [(-10, 10), (-10, 10)]
+
+Global Minimum value: 0.000000
+Found at x = [1. 1.]
+
+Global Maximum value: 454.128649
+Found at x = [-10.          -9.81088084]
