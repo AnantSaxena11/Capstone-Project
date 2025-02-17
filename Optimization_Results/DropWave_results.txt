@@ -2,7 +2,7 @@ Function: DropWave
 Bounds: [(-5.12, 5.12), (-5.12, 5.12)]
 
 Global Minimum value: -0.993108
-Found at x = [-0.13773708  0.0936349 ]
+Found at x = [0.10184741 0.13178051]
 
 Global Maximum value: -0.000000
-Found at x = [-5.09887    -1.82805976]
+Found at x = [ 2.08962156 -3.11383714]

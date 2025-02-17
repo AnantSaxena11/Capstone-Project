@@ -4,5 +4,5 @@ Bounds: [(-4.5, 4.5), (-4.5, 4.5)]
 Global Minimum value: 0.000000
 Found at x = [3.  0.5]
 
-Global Maximum value: 178131.832031
-Found at x = [ 4.5 -4.5]
+Global Maximum value: 181853.613281
+Found at x = [-4.5 -4.5]

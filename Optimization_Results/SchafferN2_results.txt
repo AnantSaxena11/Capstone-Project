@@ -2,7 +2,7 @@ Function: SchafferN2
 Bounds: [(-100, 100), (-100, 100)]
 
 Global Minimum value: 0.000000
-Found at x = [1.99244887e-07 1.78216175e-07]
+Found at x = [ 2.44350984e-07 -6.92780056e-08]
 
 Global Maximum value: 0.998433
-Found at x = [ 6.88478979e-05 -1.25311297e+00]
+Found at x = [-1.25311426e+00 -1.28102596e-04]

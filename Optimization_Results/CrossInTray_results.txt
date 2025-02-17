@@ -2,7 +2,7 @@ Function: CrossInTray
 Bounds: [(-10, 10), (-10, 10)]
 
 Global Minimum value: -2.062612
-Found at x = [-1.34938578 -1.34939903]
+Found at x = [1.34938827 1.34944369]
 
-Global Maximum value: -0.001207
-Found at x = [-9.42477796  6.28318531]
+Global Maximum value: -0.001180
+Found at x = [-9.42477796 -9.42477796]

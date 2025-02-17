@@ -2,7 +2,7 @@ Function: Michalewicz
 Bounds: [(0, 3.141592653589793), (0, 3.141592653589793)]
 
 Global Minimum value: -1.801303
-Found at x = [2.20290548 1.5707963 ]
+Found at x = [2.20290551 1.57079632]
 
 Global Maximum value: -0.000000
-Found at x = [1.40910033e-07 1.02487179e-06]
+Found at x = [6.27149307e-07 1.53121886e-06]
