@@ -1,8 +1,0 @@
-Function: Bukin
-Bounds: [(-15, -5), (-3, 3)]
-
-Global Minimum value: 0.021329
-Found at x = [-12.12711758   1.47066981]
-
-Global Maximum value: 229.178785
-Found at x = [-15.  -3.]

@@ -1,8 +1,0 @@
-Function: Easom
-Bounds: [(-100, 100), (-100, 100)]
-
-Global Minimum value: -0.000000
-Found at x = [94.32732687 -0.48340044]
-
-Global Maximum value: 0.009006
-Found at x = [1.30502151 3.14155213]

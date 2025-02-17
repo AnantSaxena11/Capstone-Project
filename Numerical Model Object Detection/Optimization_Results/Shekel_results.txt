@@ -1,8 +1,0 @@
-Function: Shekel
-Bounds: [(-5, 10), (-5, 10)]
-
-Global Minimum value: 0.056487
-Found at x = [-5. -5.]
-
-Global Maximum value: 11.022672
-Found at x = [4.00262796 4.0020559 ]

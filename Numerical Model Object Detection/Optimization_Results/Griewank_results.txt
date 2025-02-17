@@ -1,8 +1,0 @@
-Function: Griewank
-Bounds: [(-600, 600), (-600, 600)]
-
-Global Minimum value: 0.007396
-Found at x = [ 3.14002194 -4.43844468]
-
-Global Maximum value: 180.698511
-Found at x = [600.         595.96213469]

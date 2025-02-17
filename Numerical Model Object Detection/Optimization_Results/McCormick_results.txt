@@ -1,8 +1,0 @@
-Function: McCormick
-Bounds: [(-1.5, 4), (-3, 4)]
-
-Global Minimum value: -1.913223
-Found at x = [-0.54719189 -1.5471919 ]
-
-Global Maximum value: 44.098472
-Found at x = [-1.5  4. ]

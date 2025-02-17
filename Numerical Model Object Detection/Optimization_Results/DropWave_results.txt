@@ -1,8 +1,0 @@
-Function: DropWave
-Bounds: [(-5.12, 5.12), (-5.12, 5.12)]
-
-Global Minimum value: -0.993108
-Found at x = [ 0.09695634 -0.13541959]
-
-Global Maximum value: -0.000000
-Found at x = [-4.64381229  4.1830022 ]

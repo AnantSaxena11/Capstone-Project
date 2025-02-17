@@ -22,7 +22,7 @@ def convert_to_greyscale(image_number, output_dir):
     grey_image_path = os.path.join(output_dir, 'greyscale_image.png')
     # Open and convert the image
     img = Image.open(tiff_image_path)
-    grey_img = img.convert("L")
+    grey_img = img.convert("L") #the "L" mode stands for luminance
     grey_img.save(grey_image_path)
     return grey_image_path
 
