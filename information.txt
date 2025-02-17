@@ -1,18 +1,37 @@
-The issue you're facing—where the transformed images appear as white canvases—likely stems from the way the sigmoid transformation is applied to pixel values.
+Let's break down the explanation step by step:
 
-Why Are the Images Coming Out as White?
-The sigmoid function:
-T 
-f
-​
- (x)= 
-1+e 
-−x
- 
-1
-​
+1. **Understanding the Sigmoid Function**  
+   The sigmoid function is defined as:  
+   \[
+   T_f(x) = \frac{1}{1 + e^{-x}}
+   \]  
+   This function maps any input \( x \) to a value between 0 and 1. It has an S-shaped curve (often called an "S-curve").
 
-is highly sensitive to large values of x. Since grayscale pixel values range from 0 to 255, applying this transformation directly will yield values very close to 1 for most pixel intensities, making the entire image appear white.
+2. **Sensitivity to Large Input Values**  
+   The sigmoid function is very sensitive to the magnitude of \( x \). For large positive values of \( x \), the term \( e^{-x} \) becomes extremely small, making the entire fraction approach 1. Conversely, for large negative values of \( x \), \( e^{-x} \) becomes very large, making the fraction approach 0.
 
-Solution: Normalize the Pixel Values Before Applying Sigmoid
-Instead of applying the sigmoid function directly on pixel values (0-255), normalize them to [-1,1] or [0,1] before applying the function.
+3. **Grayscale Pixel Values**  
+   In a typical grayscale image, pixel intensities range from 0 to 255. If you directly pass these values to the sigmoid function, you’re effectively applying the function to a very large range of values.  
+   - For most pixel values (especially those above a certain threshold), the input to the sigmoid function is so high that the output becomes almost 1.
+   - As a result, after applying the sigmoid transformation, nearly all pixels will have values close to 1 (or, after scaling back to 0-255, close to 255), which visually appears as a white image.
+
+4. **Normalization as a Solution**  
+   To avoid this saturation effect, you need to normalize the pixel values before applying the sigmoid function. There are two common normalization strategies:
+   - **Normalize to [0,1]**: Divide each pixel value by 255.
+   - **Normalize to [-1,1]**: A common approach is to subtract 128 (or 127.5) from each pixel value and then divide by 128 (or 127.5), centering the range around 0.  
+     
+   In the provided code, the normalization is done like this:  
+   ```python
+   img_arr = (img_arr - 128) / 128  # Now values are in approximately [-1, 1]
+   ```  
+   This transformation scales down the 0-255 range so that the sigmoid function receives inputs in a much smaller range. As a result, the sigmoid output will vary more gradually across the pixel intensities.
+
+5. **After the Sigmoid Transformation**  
+   After applying the sigmoid transformation to these normalized values, the values are then scaled back to the 0-255 range (using multiplication by 255) so that they can be correctly represented as pixel intensities in the output image.
+
+---
+
+### Summary  
+- **Problem**: Directly applying the sigmoid function to pixel values in the range 0-255 causes nearly all outputs to be close to 1, resulting in white images.
+- **Cause**: The sigmoid function saturates for large inputs, meaning that for most values (above a certain threshold), the output is nearly 1.
+- **Solution**: Normalize the pixel values to a smaller range (like [-1,1] or [0,1]) before applying the sigmoid transformation. This ensures that the transformed values vary appropriately, preserving the image's contrast and details.
