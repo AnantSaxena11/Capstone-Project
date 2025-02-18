@@ -1,8 +1,0 @@
-Function: SchafferN4
-Bounds: [(-100, 100), (-100, 100)]
-
-Global Minimum value: 0.500189
-Found at x = [ 94.84367366 -67.79027896]
-
-Global Maximum value: 1.000000
-Found at x = [ 0.00323305 -0.00229963]

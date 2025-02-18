@@ -1,8 +1,0 @@
-Function: Ackley
-Bounds: [(-5, 5), (-5, 5)]
-
-Global Minimum value: 0.000000
-Found at x = [0. 0.]
-
-Global Maximum value: 14.302668
-Found at x = [-4.59753473 -4.59753473]

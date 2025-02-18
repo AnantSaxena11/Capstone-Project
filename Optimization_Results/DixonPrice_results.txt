@@ -1,8 +1,0 @@
-Function: DixonPrice
-Bounds: [(-10, 10), (-10, 10)]
-
-Global Minimum value: 0.000000
-Found at x = [1.         0.70710678]
-
-Global Maximum value: 88321.000000
-Found at x = [-10.  10.]

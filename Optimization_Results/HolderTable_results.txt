@@ -1,8 +1,0 @@
-Function: HolderTable
-Bounds: [(-10, 10), (-10, 10)]
-
-Global Minimum value: -19.208503
-Found at x = [ 8.05502341 -9.66459012]
-
-Global Maximum value: -0.000000
-Found at x = [0.         1.57079633]

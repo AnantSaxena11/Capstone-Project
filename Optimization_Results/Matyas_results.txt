@@ -1,8 +1,0 @@
-Function: Matyas
-Bounds: [(-10, 10), (-10, 10)]
-
-Global Minimum value: 0.000000
-Found at x = [0. 0.]
-
-Global Maximum value: 100.000000
-Found at x = [ 10. -10.]

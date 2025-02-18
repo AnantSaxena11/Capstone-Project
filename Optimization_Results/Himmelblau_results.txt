@@ -1,8 +1,0 @@
-Function: Himmelblau
-Bounds: [(-5, 5), (-5, 5)]
-
-Global Minimum value: 0.000000
-Found at x = [-3.77931025 -3.28318599]
-
-Global Maximum value: 890.000000
-Found at x = [5. 5.]

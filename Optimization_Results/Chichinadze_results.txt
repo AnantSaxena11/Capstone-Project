@@ -1,8 +1,0 @@
-Function: Chichinadze
-Bounds: [(-10, 10), (-10, 10)]
-
-Global Minimum value: 0.000000
-Found at x = [ 2.26413333e-09 -1.22497790e-09]
-
-Global Maximum value: 200.000000
-Found at x = [ 10. -10.]

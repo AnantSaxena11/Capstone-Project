@@ -1,8 +1,0 @@
-Function: Sphere
-Bounds: [(-5.12, 5.12), (-5.12, 5.12)]
-
-Global Minimum value: 0.000000
-Found at x = [0. 0.]
-
-Global Maximum value: 52.428800
-Found at x = [-5.12 -5.12]
