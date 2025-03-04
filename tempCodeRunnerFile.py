@@ -190,7 +190,7 @@ def apply_sigmoid_transform(image_number, input_dir, output_dir):
     return transformed_image_path
 
 ###############################
-# 3) FIREFLY ANIMATION (Modified for Far Points)
+# 3) FIREFLY ANIMATION (Corrected)
 ###############################
 def read_coordinates(file_path):
     """Read coordinates from a file written as (x, y) on each line."""
@@ -206,26 +206,17 @@ def animate_points_firefly_towards_boundary(
     image_path,
     boundary_file,
     num_points=100,
-    beta0=2.0,   # Increased base attractiveness
-    gamma=0.001, # Reduced gamma so even far points feel the pull
-    alpha=0.01,  # Minimal random component
-    frames=200   # More frames for gradual convergence
+    beta0=2.0,   # Increased base attractiveness for stronger pull
+    gamma=0.1,   # Reduced absorption so even distant points feel attraction
+    alpha=0.01,  # Very small random component
+    frames=100   # More frames for gradual convergence
 ):
     """
     Animate points moving toward the nearest boundary pixel using the Firefly update:
     
         S_i = S_i + β0 * exp(-γ * r_ij^2) * (S_j - S_i) + α * ε_i
-
-    Parameters:
-      - image_path: path to the background image (grayscale)
-      - boundary_file: path to the file with boundary pixel coordinates
-      - num_points: number of points (fireflies)
-      - beta0: base attractiveness
-      - gamma: absorption coefficient (set low so far points are pulled)
-      - alpha: randomization strength
-      - frames: number of iterations
     """
-    # Load image and determine its dimensions.
+    # Load image and get its dimensions.
     img = Image.open(image_path).convert("L")
     img_arr = np.array(img)
     height, width = img_arr.shape
@@ -236,10 +227,11 @@ def animate_points_firefly_towards_boundary(
         print("No boundary pixels found! The points have nowhere to go.")
         return
 
-    # Initialize random firefly positions; shape = (num_points, 2)
+    # Initialize random firefly positions.
     np.random.seed(42)
     xs = np.random.randint(0, width, size=num_points)
     ys = np.random.randint(0, height, size=num_points)
+    # Ensure positions is shape (num_points, 2)
     positions = np.vstack((xs, ys)).T.astype(float)
 
     # Store positions for each frame.
@@ -248,26 +240,26 @@ def animate_points_firefly_towards_boundary(
     for _ in range(frames - 1):
         new_positions = positions.copy()
         for i in range(num_points):
-            # Calculate vector differences between the i-th point and all boundary pixels.
-            diff = boundary_coords - positions[i]  # shape: (num_boundary_pixels, 2)
-            dist = np.sqrt(np.sum(diff**2, axis=1))  # Euclidean distances to boundary pixels.
+            # Find the nearest boundary pixel.
+            diff = boundary_coords - positions[i]  # positions[i] is shape (2,)
+            dist = np.sqrt(np.sum(diff**2, axis=1))
             j_idx = np.argmin(dist)
-            S_j = boundary_coords[j_idx]  # Nearest boundary pixel.
+            S_j = boundary_coords[j_idx]
             r_ij = dist[j_idx]
 
-            # Firefly update: move point i toward S_j.
+            # Update using Firefly rule.
             beta = beta0 * np.exp(-gamma * (r_ij**2))
             epsilon = np.random.uniform(-1, 1, size=2)
             new_positions[i] = positions[i] + beta * (S_j - positions[i]) + alpha * epsilon
 
-            # Keep the point within the image.
+            # Ensure positions remain within image bounds.
             new_positions[i, 0] = np.clip(new_positions[i, 0], 0, width - 1)
             new_positions[i, 1] = np.clip(new_positions[i, 1], 0, height - 1)
 
         positions = new_positions
         all_positions.append(positions.copy())
 
-    # Animate the positions.
+    # Animate the convergence.
     fig, ax = plt.subplots(figsize=(8, 8))
     ax.imshow(img_arr, cmap='gray', origin='upper')
     scat = ax.scatter(all_positions[0][:, 0], all_positions[0][:, 1], color='red', s=30)
@@ -281,7 +273,7 @@ def animate_points_firefly_towards_boundary(
     anim = FuncAnimation(fig, update, frames=frames, interval=200, blit=True, repeat=False)
     plt.show()
 
-    # To save the animation as a GIF, uncomment the following lines:
+    # To save the animation as a GIF, uncomment these lines:
     # anim.save("firefly_animation.gif", writer='pillow', fps=5)
     # print("Animation saved as firefly_animation.gif")
 
@@ -497,7 +489,7 @@ def main():
     image_width = 64
     image_height = 64
 
-    # Process images: convert to greyscale, extract gray markings, detect boundaries, extract red pixels.
+    # Process images: convert to greyscale, extract gray markings, detect boundaries, and extract red pixels.
     for i in range(1, num_images + 1):
         output_dir = f'Image_{i}'
         ensure_directory_exists(output_dir)
@@ -528,9 +520,9 @@ def main():
                 boundary_file=boundary_file,
                 num_points=100,
                 beta0=2.0,
-                gamma=0.55,
-                alpha=0.25,
-                frames=1000
+                gamma=0.1,
+                alpha=0.01,
+                frames=100
             )
 
     # Run optimization test functions (optional).
